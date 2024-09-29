@@ -6,6 +6,7 @@ qkv.chunk(3, dim=-1) 将 qkv 张量沿最后一个维度拆分成三个部分。
 每个部分的大小将为 (batch_size, seq_length, d_model // 3 + head_dim)，其中每个部分对应于查询、键和值。
 
 """
+
 #Multi-Head Attention 的创建方法
 
 self.Wqkv = nn.Linear(self.d_model, 3 * self.d_model, device=device)# 查询、键和值 3 个矩阵, 所以是 3* d_model
