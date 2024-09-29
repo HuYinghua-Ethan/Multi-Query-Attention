@@ -1,7 +1,6 @@
 # Multi-Query-Attention
 
 """
-
 qkv.chunk(3, dim=-1) 将 qkv 张量沿最后一个维度拆分成三个部分。
 
 每个部分的大小将为 (batch_size, seq_length, d_model // 3 + head_dim)，其中每个部分对应于查询、键和值。
